@@ -5,9 +5,9 @@ from jose import jwt
 from urllib.request import urlopen
 
 
-AUTH0_DOMAIN = 'data2free.auth0.com'
-ALGORITHMS = ['RS256']
-API_AUDIENCE = 'casting'
+AUTH0_DOMAIN = os.environ['AUTH0_DOMAIN']  # 'data2free.auth0.com'
+ALGORITHMS = [os.environ['ALGORITHMS']]  # ['RS256']
+API_AUDIENCE = os.environ['API_AUDIENCE']  # 'casting'
 
 # AuthError Exception
 '''

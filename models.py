@@ -3,7 +3,7 @@ from sqlalchemy import Column, String, Integer, DateTime
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-database_name = "casting_agency"
+# database_name = "casting_agency"
 DATABASE_URL = os.environ['DATABASE_URL']
 database_path = DATABASE_URL
 
